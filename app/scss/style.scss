@@ -24,12 +24,16 @@
 }
 .header__info-tel{
   margin-left: 35px;
+  &:hover{
+    border-bottom: 1px solid $blue;
+    color: $blue;
+  }
 }
 .header__info-call{
   border-bottom: 2px solid $red;
   margin-left: 40px;
   color: $red;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 
 // COURSE
@@ -594,10 +598,241 @@
   line-height: 28px;
 }
 
+// SLIDER
+.slider{
+  margin-top: 300px;
+  margin-bottom: 250px;
+}
+.slider__title{
+  margin-bottom: 40px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: $blue;
+    right: 174px;
+    top: 155px;
+  }
+  &::before{
+    position: absolute;
+    content: '';
+    @include small-waves;
+    top: 54px;
+    right: -100px ;
+  }
+}
+.slider__line{
+  margin-bottom: 80px;
+}
+.swiper-slide__inner{
+  display: flex;
+}
+.swiper-slide__block{
+  margin-left: 60px;
+  max-width: 770px;
+}
+.swiper-slide__title{
+  font-weight: 900;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.swiper-slide__text{
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.swiper-slide__link{
+  margin-bottom: 75px;
+  border-bottom: 2px solid $red;
+  color: $red;
+}
+.swiper-slide__img{
+  margin-top: 8px;  
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-horizontal>.swiper-scrollbar {
+  opacity: 1 !important;
+  margin-top: 20px;
+}
+.swiper-scrollbar-drag{
+  background-color: $red;
+  box-shadow: 0px 2px 10px 3px rgba(246, 27, 60, 0.55);
+  height: 7px;
+  top: -1px;
+}
+
+// RECORD
+.record{
+  padding-top: 100px;
+}
+.record__inner{
+  position: relative;
+}
+.record__img{
+  position: absolute;
+  z-index: -1;
+  left: -230px;
+  top: -200px;
+}
+.record__inner{
+  display: flex;
+  margin-bottom: 180px;
+}
+.record__item{
+  margin-right: 70px;
+  margin-left: auto;
+  max-width: 450px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    @include wave;
+    top: -130px;
+    left: -270px;
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    @include wave;
+    top: -230px;
+    right: -70px;
+  }
+}
+.record__title{
+  margin-bottom: 30px;  
+  font-size: 40px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: $blue;
+    right: -50px;
+    top: -55px;
+  }
+  &::before{
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: $blue;
+    right: -94px;
+    top: -110px;
+  }
+}
+.record__line{
+  margin-bottom: 15px;  
+}
+.record__text{
+  margin-bottom: 90px;    
+  line-height: 24px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: $blue;
+    right: -190px;
+    top: -230px;
+  }
+}
+.record__btn{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: $blue;
+    left: -315px;
+    bottom: -110px;
+  }
+}
+
+// FOOTER
+.footer{
+  background-color: #f8f8f8;
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  height: 244px;
+  align-items: center;
+}
+.footer__main-logo{
+  @include museo;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 48px;
+  color: $red;
+  span{
+    color: #000;
+  }
+  margin-bottom: 18px;
+}
+.footer__main-name{
+  line-height: 24px;
+}
+.footer__data-link{
+  text-align: right;
+  margin-bottom: 20px;
+  li{
+    display: inline-block;
+    font-size: 35px;
+    & + li{
+      margin-left: 20px;
+    }
+    a{
+      color: #cbcbcb;
+      transition: all .3s;
+    }
+  }
+  .icon-vk:hover{
+    color: $blue;
+  }
+  .icon-instagram:hover{
+    color: rgb(212, 76, 35);
+  }
+  .icon-youtube:hover{
+    color: $red;
+  }
+  .icon-odnoklassniki:hover{
+    color: rgb(223, 117, 19);
+  }
+}
+.footer__data-adres{
+  display: inline-block;
+  margin-right: 30px;  
+}
+.footer__data-tel{
+  margin-right: 30px; 
+  &:hover{
+    border-bottom: 1px solid $blue;
+    color: $blue;
+  }
+}
+.footer__data-call{
+  border-bottom: 2px solid $red;
+  color: $red;
+}
 
 
 
 
+
+
+  
 
 
 
