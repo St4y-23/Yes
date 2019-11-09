@@ -78,6 +78,10 @@
 .situation{
   position: relative;
 }
+.situation__wrapper{
+  height: 2170px;
+  margin-bottom: 160px;
+}
 .situation__bg{
   z-index: -2;
   top: -150px;
@@ -132,10 +136,7 @@
   &::after{
     position: absolute;
     content: '';
-    width: 23px;
-    height: 23px;
-    background-color: #2429ff;
-    border-radius: 50%;
+    @include circle;
     bottom: -125px;
     right: 144px;
   }
@@ -218,6 +219,382 @@
   top: 70px;
   right: -200px;
 }
+
+// SITUATION-ITEMS
+.situation-items{
+  margin-bottom: 225px;
+}
+.situation-items__block{
+  position: relative;
+}
+.situation-items__title{
+  max-width: 551px;
+  margin-bottom: 37px;
+}
+.situation-items__line{
+  margin-bottom: 70px;
+}
+.situation-items__wrapper{
+  display: flex;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    @include wave;
+    bottom: -130px;
+    right: 255px;
+  }
+}
+.situation-items__wrapper-item{
+  max-width: 245px;
+  padding-left: 20px;
+  & + .situation-items__wrapper-item{
+    margin-left: 30px;
+  }
+}
+.situation-items__wrapper-title{
+  font-weight: 900;
+  line-height: 28px;
+  margin-bottom: 20px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    left: -19px;
+    top: -19px;
+    z-index: -1;
+  }
+}
+.situation-items__img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 908px;
+  height: 608px;
+  z-index: -1;
+}
+
+// TEACHERS
+.teachers__wrapper{
+  position: relative;
+  margin-bottom: 80px;
+  &:after{
+    position: absolute;
+    content: '';
+    @include small-waves;
+    top: 225px;
+    right: -250px;
+  }
+}
+.teachers__title{
+  margin-bottom: 50px;
+}
+.teachers__inner{
+  display: flex;
+  margin-left: -30px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    @include circle;
+    left: -124px;
+    top: 156px;
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/svg/bublik.svg);
+    width: 433px;
+    height: 433px;
+    right: -230px;
+    top: -148px;
+    z-index: -1;
+  }
+}
+.teachers__item{
+  margin-left: 30px;
+}
+.teachers__item-img{
+  margin-bottom: 30px;
+}
+.teachers__item-name{
+  line-height: 28px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+.teachers__item-info{
+  font-size: 14px;
+  line-height: 24px;
+}
+.teachers__item-3{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 1920px;
+    height: 2px;
+    background-color: $grey;
+    right: 0;
+    top: 167px;
+    z-index: -1;
+  }
+}
+
+// ROADMAP
+.roadmap__img{
+  position: absolute;
+  width: 731px;
+  height: 1078px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.roadmap__content{
+  display: flex;
+  max-width: 750px;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+  margin-bottom: 170px;
+  &::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/svg/bublik-big.svg);
+    width: 635px;
+    height: 635px;
+    bottom: 120px;
+    left: -670px;
+    z-index: -2;
+  }
+}
+.roadmap__title{
+  margin-bottom: 35px;
+  margin-top: 148px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '?';
+    font-size: 300px;
+    color: #e9e9e9;
+    top: -160px;
+    right: -50px;
+    z-index: -1;
+  }
+}
+.roadmap__line{
+  margin-bottom: 50px;
+}
+.roadmap__subtitle{
+  font-size: 45px;
+  color: $red;
+  margin-bottom: 10px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 30px solid $blue;
+    left: -613px;
+    bottom: -40px;
+  }
+}
+.roadmap__text{
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+.roadmap__wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: -35px;
+  max-height: 570px;
+}
+.roadmap__wrapper-item{
+  margin-bottom: 30px;
+  max-width: 360px;
+  margin-left: 35px;
+  &:nth-child(3){
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      @include wave;
+      top: 20px;
+      left: -195px;
+    }
+  }
+}
+.roadmap__item-title{
+  font-weight: 900;
+  line-height: 28px;  
+}
+.roadmap__item-text{
+  line-height: 28px;
+}
+
+// EDUCATION
+.education__bg{
+  position: absolute;
+  max-width: 2046px;
+  width: 100%;
+  height: 2035px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  z-index: -2;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+.education__title{
+  max-width: 400px;
+  margin-bottom: 35px;
+  padding-top: 60px;
+}
+.education__line{
+  margin-bottom: 42px;
+}
+.education__item{
+  display: flex;
+  justify-content: space-between;
+  max-height: 336px;
+  align-items: center;
+  margin-bottom: 75px;
+  &:nth-child(1){
+    position: relative;
+    &::before{
+      position: absolute;
+      content: 'просто';
+      font-size: 122px;
+      font-weight: 900;
+      color: $grey;
+      z-index: -1;
+      left: 186px;
+      top: 0;
+    }
+    .education__item-img{
+      position: relative;
+      &::after{
+        position: absolute;
+        content: '';
+        @include small-waves;
+        right: -36px;
+        top: 36px;
+      }
+    }
+  }
+  &:nth-child(2){
+    position: relative;
+    &::before{
+      position: absolute;
+      content: 'общение';
+      font-size: 115px;
+      font-weight: 900;
+      color: $grey;
+      z-index: -1;
+      right: 50px;
+      top: 0;
+    }
+    .education__item-img{
+      position: relative;
+      &::after{
+        position: absolute;
+        content: '';
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: $blue;
+        left: 50px;
+        top: -52px;
+      }
+    }
+  }
+  &:nth-child(3){
+    position: relative;
+    &::before{
+      position: absolute;
+      content: 'практика';
+      font-size: 122px;
+      font-weight: 900;
+      color: $grey;
+      z-index: -1;
+      left: 0;
+      top: 15px;
+    }
+  }
+  &:nth-child(4){
+    position: relative;
+    &::before{
+      position: absolute;
+      content: 'повтор';
+      font-size: 115px;
+      font-weight: 900;
+      color: $grey;
+      z-index: -1;
+      right: 155px;
+      top: 5px;
+    }
+    &::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/svg/bublik-big.svg);
+    width: 635px;
+    height: 635px;
+    bottom: -500px;
+    right: -150px;
+    z-index: -3;
+    }
+    .education__item-img{
+      position: relative;
+      &::after{
+        position: absolute;
+        content: '';
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        border: 15px solid $blue;
+        right: -42px;
+        top: -42px;
+      }
+    }
+  }
+}
+.education__item-block{
+  max-width: 500px;
+  padding: 0 37px;
+  &.education__item-right{
+    margin-left: 30px;
+    margin-right: auto;
+  }
+}
+.education__item-title{
+  font-weight: 900;
+  line-height: 28px;
+  margin-bottom: 15px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 10px;
+    background-image: url(../images/svg/arrow-right.svg);
+    left: -37px;
+    top: 9px;
+  }
+}
+.education__item-text{
+  line-height: 28px;
+}
+
+
 
 
 

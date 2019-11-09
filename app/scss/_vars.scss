@@ -1,6 +1,7 @@
 $text: #1b1b1b;
 $red: #f5112c;
 $grey: #e9e9e9;
+$blue: #2429ff;
 
 
 
@@ -13,4 +14,15 @@ $grey: #e9e9e9;
   width: 145px;
   height: 19px;
   z-index: 2;
+}
+@mixin small-waves{
+  background-image: url(../images/small-waves.png);
+  width: 66px;
+  height: 34px;
+}
+@mixin circle{
+  width: 23px;
+  height: 23px;
+  background-color: #2429ff;
+  border-radius: 50%;
 }
