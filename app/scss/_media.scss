@@ -1,0 +1,587 @@
+@media (max-width: 1870px){
+  .course__bg-text{
+    font-size: 240px;
+    text-align: center;
+    margin-top: 200px;
+  }
+  .roadmap__img{
+    left: -300px;
+  }
+}
+@media (max-width: 1300px){
+  .course__block-title{
+    font-size: 30px;
+    span{
+      font-size: 24px;
+    }
+  }
+  .course__block-text{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .course__block-btn{
+    font-size: 14px;
+  }
+  .footer__main-adres{
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .footer__data-adres{
+    display: none;
+  }
+  .footer__data-tel{
+    display: block;
+    margin-right: 0;
+    text-align: right;
+  }
+  .footer__data-call{
+    margin-top: 10px;
+    padding-bottom: 3px;
+  }
+  .footer__data{
+    text-align: right;
+  }
+}
+@media (max-width: 1255px){
+  .roadmap__img{
+    left: -400px;
+  }
+}
+@media (max-width: 1120px){
+  .roadmap__img{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 267px;
+    height: 388px;
+  }
+  .roadmap__content{
+    padding-top: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1156px){
+  .teachers__inner{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      right: -100px;
+      top: 550px;
+    }
+  }
+}
+@media (max-width: 1000px){
+  .course__inner{
+    flex-wrap: wrap;
+  }
+  .course__img{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .course__block{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .course__block-line{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .course__block-text{
+    margin-bottom: 40px;
+  }
+  .situation{
+    margin-top: 150px;
+  }
+  .situation__main{
+    font-size: 30px;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .education__inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .education__item{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    // display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    &:before,
+    &:after{
+      display: none;
+    }
+    .education__item-block{
+      text-align: center;
+      max-width: 100%;
+    }
+    .education__item-right{
+      text-align: center;
+    }
+    .education__item-title{
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .education__title{
+    text-align: center;
+    max-width: 100%;
+  }
+  .education__line{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .education-img__left{
+    order: 2;
+  }
+  .education__item-img{
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    &:after,
+    &:before{
+      display: none;
+    }
+  }
+  .education__item-text{
+    margin-bottom: 15px;
+  }
+  .education__bg{
+    left: -50%;
+  }
+  .slider{
+    margin-top: 30px;
+  }
+  .record__inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .record__item{
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 100%;
+    text-align: center;
+    &:after{
+      width: 80px;
+      height: 11px;
+      background-size: cover;
+      top: -100px;
+      left: 0;
+      right: 0;
+    }
+    &:before{
+      width: 80px;
+      height: 11px;
+      background-size: cover;
+      top: -300px;
+      left: auto;
+      right: 10px;
+    }
+  }
+  .record__title{
+    &::after{
+      display: none;
+    }
+    &:before{
+      top: -250px;
+      right: 0;
+    }
+  }
+  .record__line{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .record__img{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .record{
+    padding-top: 0px;
+    margin-top: -150px;
+  }
+  .record__text{
+    margin-bottom: 40px; 
+  }
+  .record__btn{
+    &::before{
+      left: 10px;
+      bottom: -70px;
+    }
+  }
+}
+@media (max-width: 900px){
+  .item-right__3{
+    margin-top: 20px;
+  }
+}
+@media (max-width: 850px){
+  .situation__inner{
+    // display: block;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 270px;
+  }
+  .situation__item-left,
+  .situation__item-right{
+    // display: block;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .situation__item-text{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .situation__main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    &::after{
+      font-size: 200px;
+      top: -70px;
+    }
+  }
+  .situation__item-img__right,
+  .situation__item-img__left{
+    margin-bottom: 20px;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .situation__item-num{
+    top: -150px;
+    left: 0;
+    right: 0;
+  }
+  .item-num__1{
+    top: -170px;
+  }
+  .situation__item-img__left.item-left__2{
+    order: 2;
+  }
+  .situation__item-img__left{
+    order: 2;
+  }
+  .item-right__1{
+    &::before{
+      display: none;
+    }
+  }
+  .item-left__2{
+    &::after{
+      display: none;
+    }
+  }
+  .item-right__3{
+    padding-bottom: 70px;
+  }
+  .item-right__1{
+    padding-bottom: 15px;
+  }
+  .situation-items__img{
+    display: none;
+  }
+  .situation-items{
+    padding-top: 0;
+  }
+  .item-left__4{
+    &::after{
+      display: none;
+    }
+  }
+  .situation-items__wrapper{
+    &::after{
+      display: none;
+    }
+  }
+  .situation-items__title{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .situation-items__line{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 800px){
+  .education{
+    margin-top: -140px;
+  }
+  .course__bg-text{
+    display: none;
+  }
+  .header__info-adres{
+    display: none;
+  }
+  .teachers__inner{
+    &::after{
+      display: none;
+    }
+    text-align: center;
+  }
+  .teachers__item{
+    display: block;
+    max-width: 100%;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .teachers__title{
+    text-align: center;
+  }
+  .roadmap__inner{
+    text-align: center;
+  }
+  .roadmap__line{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .roadmap__wrapper{
+    display: block;
+    text-align: center;
+    max-height: 100%;
+  }
+  .roadmap__wrapper-item{
+    max-width: 100%;
+  }
+  .slider__title{
+    text-align: center;
+    &::after,
+    &::before{
+      display: none;
+    }
+  }
+  .slider__line{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .swiper-slide__inner{
+    display: block;
+    text-align: center;
+  }
+  .swiper-slide__block{
+    margin-left: 0;
+    padding: 0 10px;
+  }
+  .swiper-slide__img{
+   margin-bottom: 15px; 
+  }
+}
+@media (max-width: 680px){
+  .situation-items__title{
+    font-size: 24px;
+  }
+  .situation-items__inner{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .situation-items__wrapper{
+    display: block;
+  }
+  .situation-items__wrapper-item{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 100%;
+    & + .situation-items__wrapper-item{
+      margin-left: auto;
+    }
+  }
+  .situation-items__wrapper-title{
+    &::before{
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  .education__title{
+    font-size: 34px;
+  }
+  .education__item-title{
+    font-size: 16px;
+    &::before{
+      left: -25px;
+    }
+  }
+  .education__item-text{
+    font-size: 16px;
+  }
+  .education__item-block{
+    padding: 0 10px;
+  }
+  .education__item-block.education__item-right{
+    margin-left: 0;
+  }
+  .education__bg{
+    left: -100%;
+  }
+  #modal{
+    padding: 80px 40px;
+  }
+}
+@media (max-width: 600px){
+  .swiper-scrollbar{
+    display: none;
+  }
+  .swiper-pagination{
+    display: block;
+  }
+  .swiper-slide__title,
+  .swiper-slide__text,
+  .swiper-slide__link{
+    font-size: 16px;
+  }  
+  .slider__title{
+    font-size: 26px;
+  }
+  .footer__inner{
+    display: block;
+    text-align: center;
+  }
+  .footer__data,
+  .footer__data-tel,
+  .footer__data-link{
+    text-align: center;
+  }
+  .footer__main-logo{
+    margin-top: 50px;
+    font-size: 34px;
+  }
+  .footer__inner{
+    height: 100%;
+  }
+  .footer__data-link{
+    margin-top: 20px;
+  }
+  .footer__data-call{
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 580px){
+  .course__block-btn.red-btn{
+    padding: 15px 30px;
+  }
+  .header__logo{
+    font-size: 30px;
+  }
+  .header__info{
+    display: block;
+    padding-top: 25px;
+    a{
+      display: block;
+      padding: 2px 0;
+    }
+  }
+}
+@media (max-width: 500px){
+  .record__title{
+    font-size: 26px;
+  }
+  .record__text{
+    font-size: 16px;
+  }
+  .record__btn.red-btn{
+    padding: 26px 20px;
+    font-size: 14px;
+  }
+  .modal__title{
+    font-size: 25px;
+  }
+  .modal__text{
+    font-size: 16px;
+  }
+  #modal{
+    button{
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 450px){
+  .situation__inner{
+    margin-top: -340px;
+  }
+  .situation__bg{
+    top: 20px;
+  }
+  .roadmap__title,
+  .roadmap__subtitle{
+    font-size: 28px;
+  }
+  .roadmap__text,
+  .roadmap__item-title,
+  .roadmap__item-text{
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px){
+  .teachers__item{
+    text-align: left;
+  }
+  .teachers__title{
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px){
+  .situation__item-text{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .situation__item-num{
+    top: -120px;
+  }
+  .education__bg{
+    left: -200%;
+  }
+  .record__item{
+    &:after{
+      top: -50px;
+      left: 0;
+      right: 0;
+    }
+    &:before{
+      top: -220px;
+      left: auto;
+      right: 10px;
+    }
+  }
+  .record__title{
+    &:before{
+      top: -150px;
+      right: 0;
+    }
+  }
+}
+@media (max-width: 320px){
+  .education__bg{
+    left: -270%;
+    height: 1900px;
+  }
+}
