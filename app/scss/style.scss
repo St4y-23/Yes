@@ -2,6 +2,10 @@
 @import "global";
 @import "fonts";
 
+.header__inner{
+  position: relative;
+  z-index: 2;
+}
 .header__inner,
 .header__info{
   height: 70px;
@@ -24,10 +28,6 @@
 }
 .header__info-tel{
   margin-left: 35px;
-  &:hover{
-    border-bottom: 1px solid $blue;
-    color: $blue;
-  }
 }
 .header__info-call{
   border-bottom: 2px solid $red;
@@ -37,12 +37,19 @@
 }
 
 // COURSE
+.course{
+  position: relative;
+}
 .course__bg-text{
-  width: 1920px;
+  max-width: 1920px;
   margin-top: 55px;
   position: absolute;
+  // right: 0;
+  // margin-right: auto;
+  // margin-left: auto;
+  text-align: center;
   z-index: -2;
-  font-size: 372px;
+  font-size: 300px;
   color: #f5f5f5;
   font-family: 'Gilroy-ExtraBold', sans-serif;
 }
@@ -81,21 +88,23 @@
 // SITUATION
 .situation{
   position: relative;
+  margin-top: -100px;
 }
 .situation__wrapper{
-  height: 2170px;
-  margin-bottom: 160px;
+  // height: 2170px;
+  // margin-bottom: 160px;
 }
 .situation__bg{
   z-index: -2;
-  top: -150px;
+  top: 0px;
   position: absolute;
-  min-width: 1920px;
-  min-height: 2320px;
+  width: 1920px;
+  height: 2320px;
   background-image: url(../images/situation-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .situation__inner{
   position: relative;
@@ -162,6 +171,9 @@
     z-index: -1;
   }
 }
+.situation__item-left.item-left__4{
+  padding-bottom: 100px;
+}
 .situation__item-left{
   display: flex;
 }
@@ -226,7 +238,8 @@
 
 // SITUATION-ITEMS
 .situation-items{
-  margin-bottom: 225px;
+  margin-bottom: 100px;
+  padding-top: 600px;
 }
 .situation-items__block{
   position: relative;
@@ -282,7 +295,7 @@
   background-position: center;
   width: 908px;
   height: 608px;
-  z-index: -1;
+  z-index: -2;
 }
 
 // TEACHERS
@@ -304,6 +317,7 @@
   display: flex;
   margin-left: -30px;
   position: relative;
+  flex-wrap: wrap;
   &::before{
     position: absolute;
     content: '';
@@ -323,6 +337,7 @@
   }
 }
 .teachers__item{
+  max-width: 350px;
   margin-left: 30px;
 }
 .teachers__item-img{
@@ -336,6 +351,7 @@
 .teachers__item-info{
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 30px;
 }
 .teachers__item-3{
   position: relative;
@@ -352,13 +368,20 @@
 }
 
 // ROADMAP
+.roadmap{
+  position: relative;
+}
 .roadmap__img{
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
   position: absolute;
-  width: 731px;
-  height: 1078px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  max-width: 731px;
+  max-height: 1078px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: left;
   z-index: -1;
 }
 .roadmap__content{
@@ -410,6 +433,7 @@
     border: 30px solid $blue;
     left: -613px;
     bottom: -40px;
+    z-index: -2;
   }
 }
 .roadmap__text{
@@ -446,10 +470,14 @@
 }
 
 // EDUCATION
+.education{
+  position: relative;
+}
 .education__bg{
   position: absolute;
-  max-width: 2046px;
-  width: 100%;
+  // max-width: 100%;
+  // max-height: 100%;
+  width: 2035px;
   height: 2035px;
   background-color: #f8f8f8;
   border-radius: 50%;
@@ -457,6 +485,7 @@
   margin: 0 auto;
   right: 0;
   left: 0;
+  overflow: hidden;
 }
 .education__title{
   max-width: 400px;
@@ -665,6 +694,21 @@
   height: 7px;
   top: -1px;
 }
+.swiper-pagination{
+  display: none;
+}
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 100%;
+  background: $grey;
+  opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: $red;
+  box-shadow: 0px 2px 5px 2px rgba(246, 27, 60, 0.55);
+}
 
 // RECORD
 .record{
@@ -784,6 +828,9 @@
 .footer__main-name{
   line-height: 24px;
 }
+.footer__main-adres{
+  display: none;
+}
 .footer__data-link{
   text-align: right;
   margin-bottom: 20px;
@@ -817,14 +864,51 @@
 }
 .footer__data-tel{
   margin-right: 30px; 
-  &:hover{
-    border-bottom: 1px solid $blue;
-    color: $blue;
-  }
 }
 .footer__data-call{
   border-bottom: 2px solid $red;
   color: $red;
+}
+
+// POPUP
+#modal{
+  text-align: center;
+  max-width: 835px;
+  padding: 120px 130px;
+  form{
+    input{
+      max-width: 370px;
+      width: 100%;
+      height: 70px;
+      border: 1px solid #bababa;
+      padding: 20px 40px;
+      border-radius: 35px;
+      margin-bottom: 16px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      outline: none;
+      font-size: 20px;
+      &::placeholder{
+        color: $grey;
+        letter-spacing: 5px;
+      }
+    }
+    button{
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+.modal__title{
+  font-weight: 900;
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.modal__text{
+  line-height: 24px;
+  margin-bottom: 25px;
 }
 
 
