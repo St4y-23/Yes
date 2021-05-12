@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "swiper": "^5.2.0"
+    "swiper": "^6.5.1"
   }
 }
